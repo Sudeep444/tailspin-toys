@@ -50,7 +50,8 @@ Refer to technology-specific instruction files:
 - Create reusable components for common UI patterns
 - Keep components focused on a single responsibility
 - Use props for configuration, not duplication
-- Document component APIs with TypeScript types
+- Document component APIs with TypeScript types and public prop contracts
+- Prefer comments that explain why a component exists or why a prop matters, not how the markup is structured
 
 ## Development Workflow
 
