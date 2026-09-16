@@ -52,3 +52,11 @@ ALL UI components MUST use dark theme colors:
 - Smooth transitions: `transition-all duration-200 ease-in-out`
 - Shadows for depth: `shadow-md`, `shadow-lg`, `shadow-xl`
 - Focus states for accessibility: `focus:ring-2 focus:ring-blue-500`
+
+## Commenting and TypeScript conventions
+
+- Comment the intent, trade-off, or business constraint behind a decision; do not restate the code below the comment.
+- Use TSDoc/JSDoc on exported functions in `db/` and `src/lib/` to document purpose, parameters, and return values.
+- Document reusable `.astro` `Props` interfaces so the component API is easy to understand without reading the markup.
+- Prefer explicit TypeScript annotations for exported helpers, props, and data contracts; avoid broad `any` usage and keep the code readable.
+- The repository's ESLint config is the enforcement layer for code quality rules; the comment philosophy and API documentation standards are enforced through review and repository conventions.
