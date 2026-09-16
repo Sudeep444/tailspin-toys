@@ -12,6 +12,22 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 - Always use absolute paths when running scripts and BASH commands
 - **NEVER commit or push to main automatically unless explicitly instructed to do so**
 
+## Instruction file map
+
+Read the scoped instruction file that matches the files or task being changed before editing:
+
+- `.github/instructions/astro.instructions.md` — Astro pages, layouts, components, and routes
+- `.github/instructions/style.instructions.md` — Tailwind CSS and dark-theme styling
+- `.github/instructions/ui.instructions.md` — reusable UI, accessibility, and interaction patterns
+- `.github/instructions/accessibility.instructions.md` — keyboard, semantics, focus, and contrast requirements
+- `.github/instructions/drizzle.instructions.md` — Drizzle schema, migrations, seed data, and data-access helpers
+- `.github/instructions/unit-tests.instructions.md` — Vitest unit tests for transforms and data access
+- `.github/instructions/playwright.instructions.md` — Playwright end-to-end test authoring
+- `.github/instructions/github-actions.instructions.md` — workflow security, permissions, and CI changes
+- `.github/instructions/documentation.instructions.md` — README and project documentation changes
+
+When more than one file applies, follow all applicable files. The narrowest file-specific guidance supplements this repository-wide file; it does not replace it.
+
 ## Code standards
 
 ### Required Before Each Commit
@@ -64,6 +80,7 @@ This is a crowdfunding platform for games with a developer theme. The applicatio
 - Follow good security practices
 - Make sure to explicitly set the workflow permissions
 - Add comments to document what tasks are being performed
+- Keep workflow changes narrowly scoped and validate YAML structure before committing.
 
 ## Scripts
 
